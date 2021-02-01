@@ -56,8 +56,6 @@ def getArticle():
     related_media = requests.get(url)
     related_media = related_media.json()
 
-    print(related_media)
-
     related_media_title = tk.Label(canvas, text="Top Headlines: ", font=('Calibri', 25))
     related_media_title.place(x=1110, y=90)
 
